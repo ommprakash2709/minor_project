@@ -1,0 +1,28 @@
+[package]
+name = "deduper-engine"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+name = "deduper_engine"
+path = "src/lib.rs"
+
+[dependencies]
+rayon.workspace = true
+walkdir.workspace = true
+regex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+blake3.workspace = true
+xxhash-rust.workspace = true
+hex.workspace = true
+anyhow.workspace = true
+dirs.workspace = true
+chrono.workspace = true          # <- ADD THIS LINE
+
+[dev-dependencies]
+tempfile.workspace = true
+assert_fs.workspace = true
+predicates.workspace = true
+serial_test.workspace = true

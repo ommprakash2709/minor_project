@@ -1,0 +1,24 @@
+[package]
+name = "deduper-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "deduper-cli"
+path = "src/main.rs"
+
+[dependencies]
+deduper-engine = { path = "../deduper-engine" }
+clap.workspace = true
+anyhow.workspace = true
+# Add these missing dependencies:
+regex.workspace = true
+walkdir.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+assert_fs.workspace = true
+predicates.workspace = true
+serial_test.workspace = true
+serde_json.workspace = true

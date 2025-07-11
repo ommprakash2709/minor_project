@@ -1,0 +1,14 @@
+[
+  {
+    "path": "test-data/sample-files/text1.txt",
+    "hash": "expected_hash_value_1"
+  },
+  {
+    "path": "test-data/sample-files/text2.txt", 
+    "hash": "expected_hash_value_2"
+  },
+  {
+    "path": "test-data/sample-files/duplicate.txt",
+    "hash": "expected_hash_value_1"
+  }
+]
